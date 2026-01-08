@@ -3,50 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breakpoint 2025 - All Talks by Category</title>
+    <title>Breakpoint 2025 - Video Library</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>🎯 Breakpoint 2025: All Talks</h1>
-            <p class="subtitle">199 videos organized by topic</p>
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search videos...">
+<body class="bg-white text-gray-900 font-sans antialiased">
+    
+    <!-- Glass Navbar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-gray-200/50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-2xl font-semibold tracking-tight">Breakpoint 2025</h1>
+                    <p class="text-sm text-gray-500">199 videos organized by topic</p>
+                </div>
+                
+                <!-- Search Box -->
+                <div class="relative w-96">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search videos, companies, speakers..." 
+                        class="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all"
+                    >
+                </div>
             </div>
         </div>
-    </header>
-    <nav class="category-nav">
-        <div class="container">
-            <button class="category-btn active" data-category="all">All Videos</button>
-            <button class="category-btn" data-category="defi">DeFi</button>
-            <button class="category-btn" data-category="credit">Credit</button>
-                        <button class="category-btn" data-category="fundraising">Fundraising</button>
-            <button class="category-btn" data-category="payments">Payments</button>
-            <button class="category-btn" data-category="infrastructure">Infrastructure</button>
-            <button class="category-btn" data-category="ai">AI</button>
-            <button class="category-btn" data-category="institutional">Institutional</button>
-                        <button class="category-btn" data-category="community">Community</button>
-            <button class="category-btn" data-category="security">Security</button>
-                            <button class="category-btn" data-category="mobile">Mobile</button>
-                                            <button class="category-btn" data-category="vc">VC</button>
-                                                            <button class="category-btn" data-category="depin">DePIN</button>
-                                                                            <button class="category-btn" data-category="prediction markets">Prediction Markets</button>
-                                                                                            <button class="category-btn" data-category="nft/gaming">NFT & Gaming</button>
-                                                                                                            <button class="category-btn" data-category="rwa">RWA</button>
-                                                                                                                            <button class="category-btn" data-category="data">Data</butto
-                                                                                                                            
-        </div>
     </nav>
-    <main class="container">
-        <div id="videoCount" class="video-count"></div>
-        <div id="videoGrid" class="video-grid"></div>
-    </main>
-    <footer>
-        <div class="container">
-            <p>Created for Solana Breakpoint 2025</p>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-br from-gray-50 to-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold tracking-tight text-gray-900 mb-4">
+                All Talks by Category
+            </h2>
+            <p class="text-xl text-gray-600">Explore the future of blockchain</p>
         </div>
-    </footer>
+    </header>
+
+    <!-- Category Filter Pills -->
+    <section class="sticky top-[73px] z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4">
+        <div class="max-w-7xl mx-auto px-6">
+            <div id="categoryNav" class="flex flex-wrap gap-2"></div>
+        </div>
+    </section>
+
+    <!-- Video Grid Container -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="mb-6">
+            <p id="videoCount" class="text-sm text-gray-500"></p>
+        </div>
+        
+        <!-- Bento Grid -->
+        <div id="videoGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </main>
+
+    <!-- Scripts -->
     <script src="videos-data.js"></script>
     <script src="app.js"></script>
 </body>
