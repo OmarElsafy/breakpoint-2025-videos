@@ -179,7 +179,17 @@ const videosData = [
   { id: "hMGqrMYlc9M", title: "Superteam Demo Day: Darklake (Vitor Py Braga)", category: "community" },
   { id: "GNU6svAfQnk", title: "Superteam Demo Day: Watt Protocol (Vladimir Picha)", category: "community" },
   { id: "THA1z8Zsi2c", title: "Solana Incubator: Grow Your Company (Emon Motamedi)", category: "community" },
-  { id: "JJAxc01OwUo", title: "Superteam Demo Day: Tapedrive (Zelimir Fedoran)", category: "community" },
+  { id: "JJAxc01OwUo", title: "Superteam Demo Day: Tapedrive (Zelimir Fedoran)", category: "community" },,
+
+  // SECURITY
+  { id: "8ErcjKccnOc", title: "Security Block: Neodyme (Sebastian Fritsch)", category: "security" },
+  { id: "wp6pRX4kaFQ", title: "Security Block: Asymmetric Research (Felix Wilhelm)", category: "security" },
+  { id: "DOyXoeEc9fs", title: "Security Block: Almanax (Francesco Piccoli)", category: "security" },
+  { id: "j8BMKFQQPWY", title: "Security Block: Certora (Pamina Georgiev)", category: "security" },
+  { id: "OEpw-087JUU", title: "Product Keynote: Raise (George Bousis)", category: "security" },
+  { id: "jEYqGLKaRlg", title: "Welcome to Day 3: Solana Foundation (Rebekka Revel)", category: "security" },
+  { id: "ntnjwsrgxVg", title: "Keynote: Arcium (Yannik Schrade)", category: "security" },
+  { id: "6KNDG_i_2uk", title: "The China Opportunity: Solana Company (Joseph Chee)", category: "security" }
   { id: "wGj-J__CoCQ", title: "Product Keynote: 6th Man Ventures (Mike Dudas)", category: "community" },
   { id: "xaGlz5IV2zI", title: "Superteam Demo Day: Latinum.ai (Brendan Regan)", category: "community" },
   { id: "FaF8uORdJMo", title: "Superteam Demo Day: Asgard (Prastut Kumar)", category: "community" },
