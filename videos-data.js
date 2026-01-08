@@ -94,7 +94,27 @@ const videosData = [
   { id: "1ieMx4pJsng", title: "Anchor: Today and Tomorrow: OtterSec/Solana Foundation", category: "infrastructure" },
   { id: "0RjtbvrKjnU", title: "Tech Talk: Switchboard (Mitchell Gildenberg)", category: "infrastructure" },
   { id: "xreOFvSCgew", title: "Tech Talk: Reilabs (Marcin Kostrzewa)", category: "infrastructure" },
-  { id: "hQml2lIMY4w", title: "Tech Talk: Kinetic (Grant Stenger)", category: "infrastructure" },
+  { id: "hQml2lIMY4w", title: "Tech Talk: Kinetic (Grant Stenger)", category: "infrastructure" },,
+
+  // PAYMENTS
+  { id: "hyi-1Ia0KNU", title: "Product Keynote: Coinbase (Sabs Sachdeva, Andrew Allen)", category: "payments" },
+  { id: "cTFumlE38k0", title: "Product Keynote: Wormhole (Saeed Badreg)", category: "payments" },
+  { id: "XmxY33U0tJk", title: "Product Keynote: Keel (Cian Breathnach)", category: "payments" },
+  { id: "G-_IVPccOF0", title: "Product Keynote: Crypto.com (Park Kwon)", category: "payments" },
+  { id: "odYcNgPxJO4", title: "Solana's Superapp Moment: Jupiter/Bitwise (Kash Dhanda, Danny Nelson)", category: "payments" },
+  { id: "OFaOfGyzpPI", title: "Product Keynote: Sphere (Arnold Lee)", category: "payments" },
+  { id: "ge8FRyYkwIU", title: "Product Keynote: OSL (Eugene Cheung)", category: "payments" },
+  { id: "uayvgt0oyuU", title: "Product Keynote: B2C2 (Alizee Carli)", category: "payments" },
+  { id: "VWX8vuZZW1k", title: "Product Keynote: 2WA: Metacomp (Xiaoyun Xu, Chun Kit Chu)", category: "payments" },
+  { id: "PcyTar_mhOQ", title: "Digital Dollars for All: Zepz (Nika Naghavi)", category: "payments" },
+  { id: "LfAHFLI_CFM", title: "Product Keynote: CopperX (Tarun Mangukiya)", category: "payments" },
+  { id: "2j41dIkdYqA", title: "How Hardware Wallets and Multi-Chain Swaps Power ICM", category: "payments" },
+  { id: "ADghebANEDE", title: "Building Your Financial Life Onchain: Phantom (Brandon Millman)", category: "payments" },
+  { id: "JOfo4WgXjPo", title: "Product Keynote: Abra (Bill Barhydt)", category: "payments" },
+  { id: "4InwJ45Rctg", title: "Product Keynote: Streamflow (Malisha Stanojevic)", category: "payments" },
+  { id: "WM7-58Y9U-M", title: "Product Keynote: Tala (Nicolas Cabrera)", category: "payments" },
+  { id: "KWRgAVy-AoY", title: "Product Keynote: Forma (Farhaj Mayan)", category: "payments" },
+  { id: "Ymfc6jZ7Gb8", title: "Product Keynote: Huma Finance (Erbil Karaman)", category: "payments" }
   { id: "JQTr1ezjM24", title: "Scaling the Read Layer to 1M TPS: FluxBeam (Scott Hague)", category: "infrastructure" },
   { id: "SYgFyVP6FwE", title: "Tech Talk: Light Protocol (Swen Schaeferjohann)", category: "infrastructure" }
 ];
