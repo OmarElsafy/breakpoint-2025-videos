@@ -114,7 +114,30 @@ const videosData = [
   { id: "4InwJ45Rctg", title: "Product Keynote: Streamflow (Malisha Stanojevic)", category: "payments" },
   { id: "WM7-58Y9U-M", title: "Product Keynote: Tala (Nicolas Cabrera)", category: "payments" },
   { id: "KWRgAVy-AoY", title: "Product Keynote: Forma (Farhaj Mayan)", category: "payments" },
-  { id: "Ymfc6jZ7Gb8", title: "Product Keynote: Huma Finance (Erbil Karaman)", category: "payments" }
+  { id: "Ymfc6jZ7Gb8", title: "Product Keynote: Huma Finance (Erbil Karaman)", category: "payments" },
+
+  // AI & CONSUMER
+  { id: "sdcu_Glm7EY", title: "Fireside: Backpack's Armani Ferrante", category: "ai" },
+  { id: "tsjld4QIeLU", title: "Making Global Business Run on Solana: Squads (Stepan Simkin)", category: "ai" },
+  { id: "HZ9WIWe4pFE", title: "Sorare x Solana: Sports, Crypto, Collecting (Nicolas Julia)", category: "ai" },
+  { id: "vYuZUNPJzqA", title: "Product Keynote: KAST (Raagulan Pathy)", category: "ai" },
+  { id: "xPkuNbt5Prs", title: "Inside the Architecture of Universal Exchange: Bitget (Gracy Chen)", category: "ai" },
+  { id: "E1fyJD5tyio", title: "Legion and Solana: Positioned for Onchain IPOs (Matt O'Connor)", category: "ai" },
+  { id: "XKiqqYw03GM", title: "Product Keynote: Ledger (Ian Rogers)", category: "ai" },
+  { id: "uSseSMm4brM", title: "Tokenizing the Internet: Unlocking 364M Domains for DeFi Growth", category: "ai" },
+  { id: "DvJdmVLCYpA", title: "Kompass: Ensuring SPL-Token Stays Safe on Pinocchio (Daniel Cumming)", category: "ai" },
+  { id: "p4QnEx29Quw", title: "Product Keynote: Birdeye (Kha Nguyen)", category: "ai" },
+  { id: "VNLcKdUyVk0", title: "Product Keynote: Artemis (Jon Ma)", category: "ai" },
+  { id: "gGeIy2w_VWU", title: "DATs: Why DATs Will Succeed — and Why They Won't", category: "ai" },
+  { id: "8FuzRFamMRw", title: "Mapping the Real World With Solana: Hivemapper (Ariel Seidman)", category: "ai" },
+  { id: "VDt3NO5PQ9k", title: "Fireside: Animoca's Yat Siu", category: "ai" },
+  { id: "hZhJSBbJBn0", title: "Solana Founders: What We Care About Now", category: "ai" },
+  { id: "C_0vpvBtkGw", title: "This House: Token Buybacks Are Net-Negative Value Accrual", category: "ai" },
+  { id: "MBImX7g1J0w", title: "Normies Shouldn't Have To Deal: The Hidden Costs of Janky UX (Caitlin Cook)", category: "ai" },
+  { id: "GegcZPaN3xc", title: "Private Verifiable AI in an Age of Confusion: Ambient (Travis Good)", category: "ai" },
+  { id: "XyYcU_GQWv0", title: "Perle Labs Creator: The Frontline of Human-Led AI (Ahmed Rashad)", category: "ai" },
+  { id: "eKVklQBW09I", title: "Solana in the Multi-Chain World by NEAR Intents (Illia Polosukhin)", category: "ai" },
+  { id: "y2JLwcM-prU", title: "Product Keynote: SendAI (Yash Agarwal)", category: "ai" }
   { id: "JQTr1ezjM24", title: "Scaling the Read Layer to 1M TPS: FluxBeam (Scott Hague)", category: "infrastructure" },
   { id: "SYgFyVP6FwE", title: "Tech Talk: Light Protocol (Swen Schaeferjohann)", category: "infrastructure" }
 ];
