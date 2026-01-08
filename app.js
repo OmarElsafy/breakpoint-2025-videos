@@ -60,7 +60,8 @@ function handleSearch(e) {
         );
     }
     
-    renderVideos(filtered);
+    
+    (filtered);
     updateVideoCount(filtered.length);
 }
 
@@ -80,6 +81,8 @@ function renderVideos(videos) {
             <div class="video-info">
                 <h3 class="video-title">${video.title}</h3>
                 <span class="video-category">${getCategoryName(video.category)}</span>
+                                    ${video.companies && video.companies.length > 0 ? `<div class="video-meta"><strong>Companies:</strong> ${video.companies.join(', ')}</div>` : ''}
+                                                        ${video.speakers && video.speakers.length > 0 ? `<div class="video-meta"><strong>Speakers:</strong> ${video.speakers.join(', ')}</div>` : ''}
             </div>
         </a>
     `).join('');
