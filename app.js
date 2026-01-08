@@ -19,6 +19,7 @@ function init() {
 // Render category filter buttons
 function renderCategoryButtons() {
     const categoryNav = document.getElementById('categoryNav');
+        categoryNav.innerHTML = '';
     
     categories.forEach(category => {
         const button = document.createElement('button');
