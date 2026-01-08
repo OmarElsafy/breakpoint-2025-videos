@@ -139,6 +139,21 @@ const videosData = [
   { id: "eKVklQBW09I", title: "Solana in the Multi-Chain World by NEAR Intents (Illia Polosukhin)", category: "ai" },
   { id: "y2JLwcM-prU", title: "Product Keynote: SendAI (Yash Agarwal)", category: "ai" }
   { id: "JQTr1ezjM24", title: "Scaling the Read Layer to 1M TPS: FluxBeam (Scott Hague)", category: "infrastructure" },
-  { id: "SYgFyVP6FwE", title: "Tech Talk: Light Protocol (Swen Schaeferjohann)", category: "infrastructure" }
+  { id: "SYgFyVP6FwE", title: "Tech Talk: Light Protocol (Swen Schaeferjohann)", category: "infrastructure" },
+
+  // CREDIT & RWA
+  { id: "g7dMXmc7GB8", title: "Product Keynote: Solflare (Filip Dragoslavic)", category: "credit" },
+  { id: "r7qI5l3wXbE", title: "Lightspeed: Solana's Investor Relations Hub: Blockworks (Dan Smith)", category: "credit" },
+  { id: "163WVyqTvKxgzY", title: "The Future of Tokenized Funds: How Institutional Asset Managers Scale Onchain", category: "credit" },
+  { id: "j_Y38wyhWcg", title: "The UAE: The New Wall Street of Digital Finance: Solmate (Marco Santori)", category: "credit" },
+  { id: "Q1dpZI5MJY4", title: "Product Keynote: Layer33: Marinade Finance (Nicky Scannella)", category: "credit" },
+  { id: "QIUZ50F02DU", title: "Keynote: Solflare (Vidor Gencel)", category: "credit" },
+  { id: "8tNIkNAQU4s", title: "BAXUS 2.0: Real-World Applications, Not Just RWA (Carrie Kellar)", category: "credit" },
+  { id: "IY_-oMrO0r4", title: "Product Keynote: Neuko (Austin Hurwitz)", category: "credit" },
+  { id: "GqwdEhFEWAE", title: "Product Keynote: Moonbirds (Spencer Gordon-Sand)", category: "credit" },
+  { id: "oDje-KV8XT4", title: "NFT Ticketing Doesn't Work: KYD Labs (Ahmed Nimale)", category: "credit" },
+  { id: "W7u8vRHU-u0", title: "Product Keynote: Worm (Nass Diba)", category: "credit" },
+  { id: "-JLUo_rnOQc", title: "Product Keynote: Byreal (Emily Bao)", category: "credit" },
+  { id: "FiRtPXGEomc", title: "Product Keynote: Glider (Brian Huang)", category: "credit" }
 ];
 
