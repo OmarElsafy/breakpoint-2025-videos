@@ -1,7 +1,7 @@
 // Solana Breakpoint 2025 Videos Database
 // YouTube Playlist: https://www.youtube.com/playlist?list=PLilwLeBwGuK4dz_gqiiDA3GfS094Yr46b
 
-const videosData = [
+var videosData = [
   // INSTITUTIONAL & FINANCE
   { id: "yOgLKAwney0", title: "ADGM Registration Authority Welcome (His Excellency Rashed Abdulkarim Al Blooshi)", category: "institutional" },
   { id: "zwkvyjwZ1o0", title: "Fireside: Galaxy's Mike Novogratz", category: "institutional" },
