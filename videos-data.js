@@ -65,6 +65,37 @@ const videosData = [
   { id: "sZ7B8bm9-vY", title: "The Solana Constitution: Multicoin/Jito (Tushar Jain, Nick Almond)", category: "defi" },
   { id: "jb8_Z2auXL0", title: "The Most Delightful Way to Earn Yields: Sanctum (FP)", category: "defi" },
   { id: "V6a-GznG6EA", title: "Interest-Rate Swaps Unlock Next Phase: Exponent (Thomas Lefort)", category: "defi" },
-  { id: "XWFHrfSWQlQ", title: "Leverage Without Chaos: Turbo Tokens: Carrot (James Blair)", category: "defi" }
+  { id: "XWFHrfSWQlQ", title: "Leverage Without Chaos: Turbo Tokens: Carrot (James Blair)", category: "defi" },
+
+  // INFRASTRUCTURE
+  { id: "IAhGpzjZpbM", title: "What to Expect at Breakpoint 2025: Solana Foundation (Lily Liu, Akshay BD)", category: "infrastructure" },
+  { id: "QdvYQbjpMj4", title: "Welcome to Day 1: Solana Foundation (Jiani Chen)", category: "infrastructure" },
+  { id: "KwrzT56VyIM", title: "The State of the Network: Anza (Brennan Watt)", category: "infrastructure" },
+  { id: "KBXjNFRnVzA", title: "Keynote: Ellipsis Labs (Eugene Chen)", category: "infrastructure" },
+  { id: "Wo5xNy8cEmw", title: "Keynote: Temporal (Ben Coverston)", category: "infrastructure" },
+  { id: "dswq61yla5Q", title: "Welcome to Dev Day: Solana Foundation (Solomon Ponomarev)", category: "infrastructure" },
+  { id: "O1nZh0vg1VI", title: "Tech Talk: Chorus One (Brian Crain)", category: "infrastructure" },
+  { id: "ffIOaK4bAqk", title: "Tech Talk: SevenLabs (Kellian Vitré)", category: "infrastructure" },
+  { id: "KCXXlQd0PXI", title: "Tech Talk: Neon (Ivan Bjelajac)", category: "infrastructure" },
+  { id: "6ZuUSt014wQ", title: "Tech Talk: BULK (Junaid Peer)", category: "infrastructure" },
+  { id: "5L_aU_1FNUs", title: "Going Public on Internet Capital Markets: Metaplex (Stephen Hess)", category: "infrastructure" },
+  { id: "T9N0Sbk7UqU", title: "Wen Firedancer", category: "infrastructure" },
+  { id: "L405rB-rP7A", title: "Tech Talk: Arcium (Nico Schapeler)", category: "infrastructure" },
+  { id: "_VPQHv5WRP4", title: "Tech Talk: Ghost (Chris Chang)", category: "infrastructure" },
+  { id: "oO-r-i_DlCg", title: "Tech Talk: Blueshift (Claire Fan)", category: "infrastructure" },
+  { id: "4fHUqMv-y9g", title: "Anza Block (Brennan Watt)", category: "infrastructure" },
+  { id: "dLNVmnW5izQ", title: "Anza Block: Alessandro Decina", category: "infrastructure" },
+  { id: "7kPJ0C9gYSg", title: "Anza Block: Max Resnick", category: "infrastructure" },
+  { id: "eMIPEUi3oWM", title: "Anza Block: Alexander Meißner", category: "infrastructure" },
+  { id: "0RRKrabfvZY", title: "Tech Talk: R3 Labs (Richard Brown)", category: "infrastructure" },
+  { id: "1SLzWDBt9iY", title: "Tech Talk: Solana Mobile / Solana Labs (Mike Mobiledev.skr)", category: "infrastructure" },
+  { id: "7kduka4FXl0", title: "Tech Talk: Malbec Labs (Ben Marx)", category: "infrastructure" },
+  { id: "PgdP0uql6U0", title: "Tech Talk: MagicBlock Labs (Andrea Fortugno)", category: "infrastructure" },
+  { id: "1ieMx4pJsng", title: "Anchor: Today and Tomorrow: OtterSec/Solana Foundation", category: "infrastructure" },
+  { id: "0RjtbvrKjnU", title: "Tech Talk: Switchboard (Mitchell Gildenberg)", category: "infrastructure" },
+  { id: "xreOFvSCgew", title: "Tech Talk: Reilabs (Marcin Kostrzewa)", category: "infrastructure" },
+  { id: "hQml2lIMY4w", title: "Tech Talk: Kinetic (Grant Stenger)", category: "infrastructure" },
+  { id: "JQTr1ezjM24", title: "Scaling the Read Layer to 1M TPS: FluxBeam (Scott Hague)", category: "infrastructure" },
+  { id: "SYgFyVP6FwE", title: "Tech Talk: Light Protocol (Swen Schaeferjohann)", category: "infrastructure" }
 ];
 
