@@ -24,7 +24,6 @@ const videosData = [
   { id: "rH7LUklyI6k", title: "Product Keynote: Singapore Gulf Bank (Justin Peyton)", category: "institutional" },
   { id: "VHnWNuMIgP4", title: "An Allocator's View: Fireside With a Major European Bank", category: "institutional" },
   { id: "6ka_gm4Vhp4", title: "The Case for Permanent Capital Vehicles: Anagram (Joe Eagan)", category: "institutional" },
-  { id: "IIOpuQZXg18", title: "Build in Abu Dhabi: ADGM & R3", category: "institutional" },
   { id: "95OW8BnjvKM", title: "Fireside: Ripple Labs' Luke Judges", category: "institutional" },
   { id: "luDSUNrbH5c", title: "Fireside: JPMorgan's Scott Lucas", category: "institutional" },
   { id: "MpwfiqHd6i4", title: "Fireside: Bybit's Ben Zhou", category: "institutional" },
@@ -34,4 +33,3 @@ const videosData = [
   { id: "ECmDMrgFr18", title: "Keynote: Anchorage (Prasanna Gautam)", category: "institutional" }
 ];
 
-export default videosData;
