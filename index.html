@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoint 2025 - All Talks by Category</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎯 Breakpoint 2025: All Talks</h1>
+            <p class="subtitle">199 videos organized by topic</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search videos...">
+            </div>
+        </div>
+    </header>
+    <nav class="category-nav">
+        <div class="container">
+            <button class="category-btn active" data-category="all">All Videos</button>
+            <button class="category-btn" data-category="defi">DeFi</button>
+            <button class="category-btn" data-category="credit">Credit</button>
+            <button class="category-btn" data-category="payments">Payments</button>
+            <button class="category-btn" data-category="infrastructure">Infrastructure</button>
+            <button class="category-btn" data-category="ai">AI</button>
+            <button class="category-btn" data-category="institutional">Institutional</button>
+        </div>
+    </nav>
+    <main class="container">
+        <div id="videoCount" class="video-count"></div>
+        <div id="videoGrid" class="video-grid"></div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Created for Solana Breakpoint 2025</p>
+        </div>
+    </footer>
+    <script src="videos-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
