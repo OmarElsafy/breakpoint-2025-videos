@@ -30,5 +30,131 @@ header {
 
 /* LEFT SIDEBAR */
 .category-nav {
-  posi
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+.category-nav .container {
+  padding: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Compact vertical pills like Blockworks left nav */
+.category-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(20, 241, 149, 0.2);
+  color: #e0e0e0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-align: left;
+  width: 100%;
+}
+
+.category-btn:hover {
+  background: rgba(20, 241, 149, 0.1);
+  border-color: #14F195;
+  transform: translateY(-2px);
+}
+
+.category-btn.active {
+  background: linear-gradient(135deg, #14F195 0%, #9945FF 100%);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(20, 241, 149, 0.3);
+}
+
+/* VIDEO GRID LAYOUT */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+/* Individual video cards */
+.video-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  border-color: rgba(20, 241, 149, 0.5);
+}
+
+/* Thumbnail + info */
+.video-thumbnail img {
+  width: 100%;
+  display: block;
+}
+
+.video-info {
+  padding: 0.85rem 1rem 1rem;
+}
+
+.video-title {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.video-category {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.video-companies {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* Mobile: sidebar becomes top bar */
+@media (max-width: 768px) {
+  body {
+    margin-left: 0;
+  }
+
+  .category-nav {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .category-nav .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .category-btn {
+    width: auto;
+    flex: 0 0 auto;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
