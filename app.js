@@ -2,7 +2,7 @@
 let allVideos = [];
 let currentCategory = 'all';
 
-//Initialise app
+// Initialise app
 window.addEventListener('DOMContentLoaded', () => {
     // Note: videosData should be loaded from videos-data.js
     if (typeof videosData !== 'undefined') {
@@ -11,7 +11,8 @@ window.addEventListener('DOMContentLoaded', () => {
         updateVideoCount(allVideos.length);
     } else {
         console.error('videosData not loaded');
-        document.getElementById('videoGrid').innerHTML = '<p style="text-align: center; color: #fff;">Loading videos...</p>';
+        document.getElementById('videoGrid').innerHTML =
+            '<p style="text-align: center; color: #fff;">Loading videos...</p>';
     }
 
     // Setup search
@@ -24,9 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
     // Setup modal close handlers
     const modal = document.getElementById('videoModal');
     const closeBtn = document.querySelector('.video-modal-close');
-    
+
     closeBtn.addEventListener('click', closeVideoModal);
-    
+
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             closeVideoModal();
@@ -75,13 +76,13 @@ function handleSearch(e) {
     if (searchTerm) {
         filtered = filtered.filter(video => {
             const titleMatch = video.title.toLowerCase().includes(searchTerm);
-            const companiesMatch = video.companies?.some(company => 
+            const companiesMatch = video.companies?.some(company =>
                 company.toLowerCase().includes(searchTerm)
             );
-            const speakersMatch = video.speakers?.some(speaker => 
+            const speakersMatch = video.speakers?.some(speaker =>
                 speaker.toLowerCase().includes(searchTerm)
             );
-            
+
             return titleMatch || companiesMatch || speakersMatch;
         });
     }
@@ -94,7 +95,8 @@ function renderVideos(videos) {
     const grid = document.getElementById('videoGrid');
 
     if (videos.length === 0) {
-        grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #fff; padding: 2rem;">No videos found</p>';
+        grid.innerHTML =
+            '<p style="grid-column: 1/-1; text-align: center; color: #fff; padding: 2rem;">No videos found</p>';
         return;
     }
 
@@ -124,17 +126,23 @@ function renderVideos(videos) {
 function openVideoModal(videoId) {
     const modal = document.getElementById('videoModal');
     const player = document.getElementById('videoPlayer');
+    const floating = document.getElementById('floatingPlayer');
+
     player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
+    if (floating) floating.classList.remove('floating'); // start full-size in modal
 }
 
 function closeVideoModal() {
     const modal = document.getElementById('videoModal');
     const player = document.getElementById('videoPlayer');
+    const floating = document.getElementById('floatingPlayer');
+
     modal.style.display = 'none';
     player.src = '';
     document.body.style.overflow = 'auto';
+    if (floating) floating.classList.remove('floating');
 }
 
 function updateVideoCount(count) {
@@ -164,7 +172,6 @@ function getCategoryName(category) {
         'education': 'Education',
 
         // new / normalised categories from videos-data.js
-        
         'cex': 'CEX',
         'data': 'Data',
         'credit': 'Credit',
@@ -178,3 +185,19 @@ function getCategoryName(category) {
 
     return categoryNames[category] || category;
 }
+
+// Floating mini‑player on scroll
+window.addEventListener('scroll', () => {
+    const modal = document.getElementById('videoModal');
+    const floating = document.getElementById('floatingPlayer');
+
+    // only float when modal is open and elements exist
+    if (modal && floating && modal.style.display === 'flex') {
+        if (window.scrollY > 200) {
+            floating.classList.add('floating');
+        } else {
+            floating.classList.remove('floating');
+        }
+    }
+});
+
