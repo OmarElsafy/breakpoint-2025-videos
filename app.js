@@ -20,6 +20,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Setup category buttons
     setupCategoryButtons();
+
+    // Setup modal close handlers
+    const modal = document.getElementById('videoModal');
+    const closeBtn = document.querySelector('.video-modal-close');
+    
+    closeBtn.addEventListener('click', closeVideoModal);
+    
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeVideoModal();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'flex') {
+            closeVideoModal();
+        }
+    });
 });
 
 function setupCategoryButtons() {
@@ -54,7 +72,7 @@ function handleSearch(e) {
         ? allVideos
         : allVideos.filter(video => video.category === currentCategory);
 
-     if (searchTerm) {
+    if (searchTerm) {
         filtered = filtered.filter(video => {
             const titleMatch = video.title.toLowerCase().includes(searchTerm);
             const companiesMatch = video.companies?.some(company => 
@@ -67,10 +85,10 @@ function handleSearch(e) {
             return titleMatch || companiesMatch || speakersMatch;
         });
     }
-    }
+
     renderVideos(filtered);
     updateVideoCount(filtered.length);
-}}
+}
 
 function renderVideos(videos) {
     const grid = document.getElementById('videoGrid');
@@ -81,17 +99,42 @@ function renderVideos(videos) {
     }
 
     grid.innerHTML = videos.map(video => `
-        <a href="https://www.youtube.com/watch?v=${video.id}" target="_blank" class="video-card">
+        <div class="video-card" data-video-id="${video.id}">
             <div class="video-thumbnail">
                 <img src="https://img.youtube.com/vi/${video.id}/mqdefault.jpg" alt="${video.title}" loading="lazy">
+                <div class="play-button">▶</div>
             </div>
             <div class="video-info">
                 <h3 class="video-title">${video.title}</h3>
                 <p class="video-category">${getCategoryName(video.category)}</p>
                 ${video.companies ? `<p class="video-companies">${video.companies.join(', ')}</p>` : ''}
             </div>
-        </a>
+        </div>
     `).join('');
+
+    // Add click handlers for video cards
+    document.querySelectorAll('.video-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const videoId = card.getAttribute('data-video-id');
+            openVideoModal(videoId);
+        });
+    });
+}
+
+function openVideoModal(videoId) {
+    const modal = document.getElementById('videoModal');
+    const player = document.getElementById('videoPlayer');
+    player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const player = document.getElementById('videoPlayer');
+    modal.style.display = 'none';
+    player.src = '';
+    document.body.style.overflow = 'auto';
 }
 
 function updateVideoCount(count) {
