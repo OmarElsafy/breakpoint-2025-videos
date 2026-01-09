@@ -26,7 +26,6 @@ var videosData = [
   { id: "6ka_gm4Vhp4", title: "The Case for Permanent Capital Vehicles: Anagram (Joe Eagan)", category: "institutional", companies: ["Anagram"], speakers: ["Joe Eagan"] },
   { id: "95OW8BnjvKM", title: "Fireside: Ripple Labs' Luke Judges", category: "institutional", companies: ["Ripple Labs"], speakers: ["Luke Judges"] },
   { id: "luDSUNrbH5c", title: "Fireside: JPMorgan's Scott Lucas", category: "institutional", companies: ["JPMorgan"], speakers: ["Scott Lucas"] },
-  { id: "MpwfiqHd6i4", title: "Fireside: Bybit's Ben Zhou", category: "institutional", companies: ["Bybit"], speakers: ["Ben Zhou"] },
   { id: "I8BQdJH_pbg", title: "Keynote: Galaxy (Michael Marcantonio)", category: "institutional", companies: ["Galaxy"], speakers: ["Michael Marcantonio"] },
   { id: "wXEXlRgtsYk", title: "Product Keynote: Astana International Finance Centre", category: "institutional", companies: ["Astana International Finance Centre"], speakers: [] },
   { id: "HkA6nSlNZ_o", title: "Product Keynote: DK Bank (Yudong Zheng)", category: "institutional", companies: ["DK Bank"], speakers: ["Yudong Zheng"] },
@@ -40,7 +39,6 @@ var videosData = [
   { id: "dr2u6NS3WoT", title: "The State of Revenue on Solana: Blockworks (Dan Smith)", category: "defi", companies: ["Blockworks"], speakers: ["Dan Smith"] },
   { id: "R1mgFWtaaqI", title: "Product Keynote: Backed Finance (Adam Levit)", category: "defi", companies: ["Backed Finance"], speakers: ["Adam Levit"] },
   { id: "oiWxp5J2Nws", title: "This House rejects derivative-based models that tokenize equities", category: "defi", companies: [], speakers: [] },
-  { id: "LOvv_ADUgjk", title: "What Wall Street Wants: Metrics That Matter: Artemis (Jon Ma)", category: "defi", companies: ["Artemis"], speakers: ["Jon Ma"] },
   { id: "I_lNcgA6mLo", title: "Keynote: Erebor (Suzanne Dannheim)", category: "defi", companies: ["Erebor"], speakers: ["Suzanne Dannheim"] },
   { id: "TDdWB-gFIw4", title: "This House rejects political alignment as a growth strategy for crypto", category: "defi", companies: [], speakers: [] },
   { id: "oGnSr3U4U9E", title: "One Chain to Rule Them All: Can Solana Support Wall Street's Demands?", category: "defi", companies: [], speakers: [] },
@@ -81,6 +79,7 @@ var videosData = [
   
   // CEX
   { id: "xPkuNbt5Prs", title: "Inside the Architecture of Universal Exchange: Bitget (Gracy Chen)", category: "CEX", companies: ["Bitget"], speakers: ["Gracy Chen"] },
+  { id: "MpwfiqHd6i4", title: "Fireside: Bybit's Ben Zhou", category: "CEX", companies: ["Bybit"], speakers: ["Ben Zhou"] },
 
   
   // INFRASTRUCTURE
@@ -159,6 +158,7 @@ var videosData = [
   { id: "dBiokmJZw7o", title: "Product Keynote: Nansen (Charlie Kavanagh)", category: "data", companies: ["Nansen"], speakers: ["Charlie Kavanagh"] },
   { id: "p4QnEx29Quw", title: "Product Keynote: Birdeye (Kha Nguyen)", category: "data", companies: ["Birdeye"], speakers: ["Kha Nguyen"] },
   { id: "VNLcKdUyVk0", title: "Product Keynote: Artemis (Jon Ma)", category: "data", companies: ["Artemis"], speakers: ["Jon Ma"] },
+  { id: "LOvv_ADUgjk", title: "What Wall Street Wants: Metrics That Matter: Artemis (Jon Ma)", category: "data", companies: ["Artemis"], speakers: ["Jon Ma"] },
 
   // CREDIT & RWA
   { id: "g7dMXmc7GB8", title: "Product Keynote: Solflare (Filip Dragoslavic)", category: "credit", companies: ["Solflare"], speakers: ["Filip Dragoslavic"] },
