@@ -48,7 +48,8 @@ var videosData = [
   { id: "XPoayC3OmxM", title: "Kamino: The Next Chapter (Marius Ciubotariu)", category: "defi", companies: ["Kamino"], speakers: ["Marius Ciubotariu"] },
   { id: "_lJXD6sfhIGa", title: "Keynote: Figure (Mike Cagney)", category: "defi", companies: ["Figure"], speakers: ["Mike Cagney"] },
   { id: "pXXc47BQUvE", title: "The True Price: How Pyth Is Rebuilding the $50B Industry", category: "defi", companies: ["Pyth"], speakers: [] },
-  { id: "O0VYopeDMhk", title: "Keynote: DFlow (Milesh Math)", category: "defi", companies: ["DFlow"], speakers: ["Milesh Math"] }{ id: "rL92uVQdFyQ", title: "Sharpening Your Trading Edge: Titan (Chris Chung)", category: "defi", companies: ["Titan"], speakers: ["Chris Chung"] },
+  { id: "O0VYopeDMhk", title: "Keynote: DFlow (Milesh Math)", category: "defi", companies: ["DFlow"], speakers: ["Milesh Math"] }
+  { id: "rL92uVQdFyQ", title: "Sharpening Your Trading Edge: Titan (Chris Chung)", category: "defi", companies: ["Titan"], speakers: ["Chris Chung"] },
   { id: "HluHxelkEgk", title: "Ranger: Building a Unified Market (FA2)", category: "defi", companies: ["Ranger"], speakers: ["FA2"] },
   { id: "0zb57hUxMmE", title: "The Future Is Borderless: deBridge (Alex Smirnov)", category: "defi", companies: ["deBridge"], speakers: ["Alex Smirnov"] },
   { id: "WWHoxNuouOM", title: "Making Finance Invisible: The Killer App for Tokenized Economy", category: "defi", companies: [], speakers: [] },
