@@ -13,11 +13,11 @@ window.addEventListener('DOMContentLoaded', () => {
         console.error('videosData not loaded');
         document.getElementById('videoGrid').innerHTML = '<p style="text-align: center; color: #fff;">Loading videos...</p>';
     }
-    
+
     // Setup search
     const searchInput = document.getElementById('searchInput');
     searchInput.addEventListener('input', handleSearch);
-    
+
     // Setup category buttons
     setupCategoryButtons();
 });
@@ -30,7 +30,7 @@ function setupCategoryButtons() {
             buttons.forEach(btn => btn.classList.remove('active'));
             // Add active class to clicked button
             button.classList.add('active');
-            
+
             const category = button.getAttribute('data-category');
             currentCategory = category;
             filterVideos(category);
@@ -39,40 +39,47 @@ function setupCategoryButtons() {
 }
 
 function filterVideos(category) {
-    const filtered = category === 'all' 
-        ? allVideos 
+    const filtered = category === 'all'
+        ? allVideos
         : allVideos.filter(video => video.category === category);
-    
+
     renderVideos(filtered);
     updateVideoCount(filtered.length);
 }
 
 function handleSearch(e) {
     const searchTerm = e.target.value.toLowerCase();
-    
-    let filtered = currentCategory === 'all' 
-        ? allVideos 
+
+    let filtered = currentCategory === 'all'
+        ? allVideos
         : allVideos.filter(video => video.category === currentCategory);
-    
-    if (searchTerm) {
-        filtered = filtered.filter(video => 
-            video.title.toLowerCase().includes(searchTerm)
-        );
+
+     if (searchTerm) {
+        filtered = filtered.filter(video => {
+            const titleMatch = video.title.toLowerCase().includes(searchTerm);
+            const companiesMatch = video.companies?.some(company => 
+                company.toLowerCase().includes(searchTerm)
+            );
+            const speakersMatch = video.speakers?.some(speaker => 
+                speaker.toLowerCase().includes(searchTerm)
+            );
+            
+            return titleMatch || companiesMatch || speakersMatch;
+        });
     }
-    
-    
-    (filtered);
+    }
+    renderVideos(filtered);
     updateVideoCount(filtered.length);
-}
+}}
 
 function renderVideos(videos) {
     const grid = document.getElementById('videoGrid');
-    
+
     if (videos.length === 0) {
         grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #fff; padding: 2rem;">No videos found</p>';
         return;
     }
-    
+
     grid.innerHTML = videos.map(video => `
         <a href="https://www.youtube.com/watch?v=${video.id}" target="_blank" class="video-card">
             <div class="video-thumbnail">
@@ -80,27 +87,21 @@ function renderVideos(videos) {
             </div>
             <div class="video-info">
                 <h3 class="video-title">${video.title}</h3>
-                <span class="video-category">${getCategoryName(video.category)}</span>
-                                    ${video.companies && video.companies.length > 0 ? `<div class="video-meta"><strong>Companies:</strong> ${video.companies.join(', ')}</div>` : ''}
-                                                        ${video.speakers && video.speakers.length > 0 ? `<div class="video-meta"><strong>Speakers:</strong> ${video.speakers.join(', ')}</div>` : ''}
+                <p class="video-category">${getCategoryName(video.category)}</p>
+                ${video.companies ? `<p class="video-companies">${video.companies.join(', ')}</p>` : ''}
             </div>
         </a>
     `).join('');
 }
 
 function updateVideoCount(count) {
-    const countEl = document.getElementById('videoCount');
-    countEl.textContent = `Showing ${count} video${count !== 1 ? 's' : ''}`;
+    document.getElementById('videoCount').textContent = count;
 }
 
 function getCategoryName(category) {
     const categoryNames = {
-        'all': 'All Videos',
-        'defi': 'DeFi',
-        'credit': 'Credit',
-        'payments': 'Payments',
-        'infrastructure': 'Infrastructure',
         'ai': 'AI',
+        'defi': 'DeFi',
         'institutional': 'Institutional',
         'gaming': 'Gaming',
         'nfts': 'NFTs',
@@ -119,6 +120,6 @@ function getCategoryName(category) {
         'memes': 'Memes',
         'education': 'Education'
     };
-    
+
     return categoryNames[category] || category;
 }
