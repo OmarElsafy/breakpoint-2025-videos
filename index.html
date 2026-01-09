@@ -53,19 +53,22 @@
 
     <!-- Video Modal -->
     <div id="videoModal" class="video-modal">
-        <div class="video-modal-content">
-            <button class="video-modal-close">&times;</button>
-            <div class="video-modal-player">
-                <iframe
-                    id="videoPlayer"
-                    src=""
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-            </div>
-        </div>
+  <div class="video-modal-content">
+    <button class="video-modal-close">&times;</button>
+    <div class="video-modal-player">
+      <div id="floatingPlayer" class="floating-player">
+        <iframe
+          id="videoPlayer"
+          src=""
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
+  </div>
+</div>
+
 
     <script src="videos-data.js"></script>
     <script src="app.js"></script>
