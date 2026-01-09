@@ -114,13 +114,17 @@ function renderVideos(videos) {
         </div>
     `).join('');
 
-    // Add click handlers for video cards
-    document.querySelectorAll('.video-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const videoId = card.getAttribute('data-video-id');
-            openVideoModal(videoId);
+    // CRITICAL: Add click handlers AFTER innerHTML is set
+    // Use a small delay to ensure DOM has updated
+    setTimeout(() => {
+        const cards = document.querySelectorAll('.video-card');
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                const videoId = card.getAttribute('data-video-id');
+                openVideoModal(videoId);
+            });
         });
-    });
+    }, 0);
 }
 
 function openVideoModal(videoId) {
