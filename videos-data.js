@@ -1,5 +1,4 @@
 // Solana Breakpoint 2025 Videos Database
-// YouTube Playlist: https://www.youtube.com/playlist?list=PLilwLeBwGuK4dz_gqiiDA3GfS094Yr46b
 
 var videosData = [
   // INSTITUTIONAL & FINANCE
@@ -32,9 +31,8 @@ var videosData = [
   { id: "ECmDMrgFr18", title: "Keynote: Anchorage (Prasanna Gautam)", category: "institutional", companies: ["Anchorage"], speakers: ["Prasanna Gautam"] },
   { id: "gGeIy2w_VWU", title: "DATs: Why DATs Will Succeed — and Why They Won't", category: "institutional", companies: [], speakers: [] },
 
-  
   // DEFI
-    { id: "r8IRNGU5CZE", title: "Keynote: Jupiter (Kash Dhanda)", category: "defi", companies: ["Jupiter"], speakers: ["Kash Dhanda"] },
+  { id: "r8IRNGU5CZE", title: "Keynote: Jupiter (Kash Dhanda)", category: "defi", companies: ["Jupiter"], speakers: ["Kash Dhanda"] },
   { id: "h1bkUoS61R8", title: "The State of Returns on Solana: Solstice (Ben Nadareski)", category: "defi", companies: ["Solstice"], speakers: ["Ben Nadareski"] },
   { id: "dr2u6NS3WoT", title: "The State of Revenue on Solana: Blockworks (Dan Smith)", category: "defi", companies: ["Blockworks"], speakers: ["Dan Smith"] },
   { id: "R1mgFWtaaqI", title: "Product Keynote: Backed Finance (Adam Levit)", category: "defi", companies: ["Backed Finance"], speakers: ["Adam Levit"] },
@@ -48,7 +46,7 @@ var videosData = [
   { id: "XPoayC3OmxM", title: "Kamino: The Next Chapter (Marius Ciubotariu)", category: "defi", companies: ["Kamino"], speakers: ["Marius Ciubotariu"] },
   { id: "_lJXD6sfhIGa", title: "Keynote: Figure (Mike Cagney)", category: "defi", companies: ["Figure"], speakers: ["Mike Cagney"] },
   { id: "pXXc47BQUvE", title: "The True Price: How Pyth Is Rebuilding the $50B Industry", category: "defi", companies: ["Pyth"], speakers: [] },
-  { id: "O0VYopeDMhk", title: "Keynote: DFlow (Milesh Math)", category: "defi", companies: ["DFlow"], speakers: ["Milesh Math"] }
+  { id: "O0VYopeDMhk", title: "Keynote: DFlow (Milesh Math)", category: "defi", companies: ["DFlow"], speakers: ["Milesh Math"] },
   { id: "rL92uVQdFyQ", title: "Sharpening Your Trading Edge: Titan (Chris Chung)", category: "defi", companies: ["Titan"], speakers: ["Chris Chung"] },
   { id: "HluHxelkEgk", title: "Ranger: Building a Unified Market (FA2)", category: "defi", companies: ["Ranger"], speakers: ["FA2"] },
   { id: "0zb57hUxMmE", title: "The Future Is Borderless: deBridge (Alex Smirnov)", category: "defi", companies: ["deBridge"], speakers: ["Alex Smirnov"] },
@@ -64,7 +62,7 @@ var videosData = [
   { id: "jb8_Z2auXL0", title: "The Most Delightful Way to Earn Yields: Sanctum (FP)", category: "defi", companies: ["Sanctum"], speakers: ["FP"] },
   { id: "V6a-GznG6EA", title: "Interest-Rate Swaps Unlock Next Phase: Exponent (Thomas Lefort)", category: "defi", companies: ["Exponent"], speakers: ["Thomas Lefort"] },
   { id: "XWFHrfSWQlQ", title: "Leverage Without Chaos: Turbo Tokens: Carrot (James Blair)", category: "defi", companies: ["Carrot"], speakers: ["James Blair"] },
-  { id: "FaF8uORdJMo", title: "Superteam Demo Day: Asgard (Prastut Kumar)", category: "deii", companies: ["Asgard"], speakers: ["Prastut Kumar"] },
+  { id: "FaF8uORdJMo", title: "Superteam Demo Day: Asgard (Prastut Kumar)", category: "defi", companies: ["Asgard"], speakers: ["Prastut Kumar"] }, // fixed from deii
   { id: "FiRtPXGEomc", title: "Product Keynote: Glider (Brian Huang)", category: "defi", companies: ["Glider"], speakers: ["Brian Huang"] },
   { id: "tsjld4QIeLU", title: "Making Global Business Run on Solana: Squads (Stepan Simkin)", category: "defi", companies: ["Squads"], speakers: ["Stepan Simkin"] },
   { id: "Pavpk1BOvdw", title: "Superteam Demo Day: Pye (Erik Ashdown)", category: "defi", companies: ["Pye"], speakers: ["Erik Ashdown"] },
@@ -76,13 +74,11 @@ var videosData = [
   { id: "gmaXrEklOcE", title: "Superteam Demo Day: Atomiq Labs (Sylvia Durach)", category: "defi", companies: ["Atomiq Labs"], speakers: ["Sylvia Durach"] },
   { id: "hMGqrMYlc9M", title: "Superteam Demo Day: Darklake (Vitor Py Braga)", category: "defi", companies: ["Darklake"], speakers: ["Vitor Py Braga"] },
   { id: "uSseSMm4brM", title: "Tokenizing the Internet: Unlocking 364M Domains for DeFi Growth", category: "defi", companies: [], speakers: [] },
-  
-  
-  // CEX
-  { id: "xPkuNbt5Prs", title: "Inside the Architecture of Universal Exchange: Bitget (Gracy Chen)", category: "CEX", companies: ["Bitget"], speakers: ["Gracy Chen"] },
-  { id: "MpwfiqHd6i4", title: "Fireside: Bybit's Ben Zhou", category: "CEX", companies: ["Bybit"], speakers: ["Ben Zhou"] },
 
-  
+  // CEX
+  { id: "xPkuNbt5Prs", title: "Inside the Architecture of Universal Exchange: Bitget (Gracy Chen)", category: "cex", companies: ["Bitget"], speakers: ["Gracy Chen"] },
+  { id: "MpwfiqHd6i4", title: "Fireside: Bybit's Ben Zhou", category: "cex", companies: ["Bybit"], speakers: ["Ben Zhou"] },
+
   // INFRASTRUCTURE
   { id: "IAhGpzjZpbM", title: "What to Expect at Breakpoint 2025: Solana Foundation (Lily Liu, Akshay BD)", category: "infrastructure", companies: ["Solana Foundation"], speakers: ["Lily Liu", "Akshay BD"] },
   { id: "QdvYQbjpMj4", title: "Welcome to Day 1: Solana Foundation (Jiani Chen)", category: "infrastructure", companies: ["Solana Foundation"], speakers: ["Jiani Chen"] },
@@ -118,9 +114,8 @@ var videosData = [
   { id: "fshuWyZKs7E", title: "Superteam Demo Day: Solana ID (Simon Molitor)", category: "infrastructure", companies: ["Solana ID"], speakers: ["Simon Molitor"] },
   { id: "PnlLtg5F9ZM", title: "Superteam Demo Day: GameShift (Karthik Makayee)", category: "infrastructure", companies: ["GameShift"], speakers: ["Karthik Makayee"] },
   { id: "N_MHl3CLOAk", title: "Superteam Demo Day: Xitadel (Ryot Seo)", category: "infrastructure", companies: ["Xitadel"], speakers: ["Ryot Seo"] },
-  { id: "BjWVCnffZ7A", title: "Superteam Demo Day: Encifher (Rishabh Gupta)", category: "infrastucture", companies: ["Encifher"], speakers: ["Rishabh Gupta"] },
+  { id: "BjWVCnffZ7A", title: "Superteam Demo Day: Encifher (Rishabh Gupta)", category: "infrastructure", companies: ["Encifher"], speakers: ["Rishabh Gupta"] }, // fixed from infrastucture
   { id: "eKVklQBW09I", title: "Solana in the Multi-Chain World by NEAR Intents (Illia Polosukhin)", category: "infrastructure", companies: ["NEAR"], speakers: ["Illia Polosukhin"] },
-
 
   // PAYMENTS
   { id: "hyi-1Ia0KNU", title: "Product Keynote: Coinbase (Sabs Sachdeva, Andrew Allen)", category: "payments", companies: ["Coinbase"], speakers: ["Sabs Sachdeva", "Andrew Allen"] },
@@ -144,7 +139,6 @@ var videosData = [
   { id: "wNYWu6yN7q8", title: "Superteam Demo Day: Xelio (João Vasco Martins)", category: "payments", companies: ["Xelio"], speakers: ["João Vasco Martins"] },
   { id: "vYuZUNPJzqA", title: "Product Keynote: KAST (Raagulan Pathy)", category: "payments", companies: ["KAST"], speakers: ["Raagulan Pathy"] },
 
-
   // AI 
   { id: "GegcZPaN3xc", title: "Private Verifiable AI in an Age of Confusion: Ambient (Travis Good)", category: "ai", companies: ["Ambient"], speakers: ["Travis Good"] },
   { id: "XyYcU_GQWv0", title: "Perle Labs Creator: The Frontline of Human-Led AI (Ahmed Rashad)", category: "ai", companies: ["Perle Labs"], speakers: ["Ahmed Rashad"] },
@@ -155,7 +149,7 @@ var videosData = [
   { id: "j6J4UPC327I", title: "Superteam Demo Day: Cleopetra (Umang Verma)", category: "defi", companies: ["Cleopetra"], speakers: ["Umang Verma"] },
 
   // DATA
-  { id: "xnTnOEDshN4", title: "Product Keynote: Dune (Alessandro Losi)", category: "data", companies: ["data"], speakers: ["Alessandro Losi"] },
+  { id: "xnTnOEDshN4", title: "Product Keynote: Dune (Alessandro Losi)", category: "data", companies: ["Dune"], speakers: ["Alessandro Losi"] },
   { id: "dBiokmJZw7o", title: "Product Keynote: Nansen (Charlie Kavanagh)", category: "data", companies: ["Nansen"], speakers: ["Charlie Kavanagh"] },
   { id: "p4QnEx29Quw", title: "Product Keynote: Birdeye (Kha Nguyen)", category: "data", companies: ["Birdeye"], speakers: ["Kha Nguyen"] },
   { id: "VNLcKdUyVk0", title: "Product Keynote: Artemis (Jon Ma)", category: "data", companies: ["Artemis"], speakers: ["Jon Ma"] },
@@ -173,11 +167,9 @@ var videosData = [
   { id: "GqwdEhFEWAE", title: "Product Keynote: Moonbirds (Spencer Gordon-Sand)", category: "credit", companies: ["Moonbirds"], speakers: ["Spencer Gordon-Sand"] },
   { id: "oDje-KV8XT4", title: "NFT Ticketing Doesn't Work: KYD Labs (Ahmed Nimale)", category: "credit", companies: ["KYD Labs"], speakers: ["Ahmed Nimale"] },
   { id: "W7u8vRHU-u0", title: "Product Keynote: Worm (Nass Diba)", category: "credit", companies: ["Worm"], speakers: ["Nass Diba"] },
-  { id: "-JLUo_rnOQc", title: "Product Keynote: Byreal (Emily Bao)", category: "RWA", companies: ["Byreal"], speakers: ["Emily Bao"] },
+  { id: "-JLUo_rnOQc", title: "Product Keynote: Byreal (Emily Bao)", category: "rwa", companies: ["Byreal"], speakers: ["Emily Bao"] },
   { id: "FiRtPXGEomc", title: "Product Keynote: Glider (Brian Huang)", category: "credit", companies: ["Glider"], speakers: ["Brian Huang"] },
-  { id: "-JLUo_rnOQc", title: "Product Keynote: Byreal (Emily Bao)", category: "RWA", companies: ["Byreal"], speakers: ["Emily Bao"] },
   { id: "6J4BupINCus", title: "Superteam Demo Day: Fundl (Josip Volarević)", category: "rwa", companies: ["Fundl"], speakers: ["Josip Volarević"] },
-
 
   // SECURITY
   { id: "8ErcjKccnOc", title: "Security Block: Neodyme (Sebastian Fritsch)", category: "security", companies: ["Neodyme"], speakers: ["Sebastian Fritsch"] },
@@ -198,43 +190,40 @@ var videosData = [
   { id: "f65eS-vrhs4", title: "Product Keynote: RockawayX (Adam Bilko)", category: "vc", companies: ["RockawayX"], speakers: ["Adam Bilko"] },
   { id: "VDt3NO5PQ9k", title: "Fireside: Animoca's Yat Siu", category: "vc", companies: ["Animoca"], speakers: ["Yat Siu"] },
 
-
-// DePin 
+  // DePin 
   { id: "x8ZXrvQEukY", title: "Product Keynote: Helium (Abhay Kumar)", category: "depin", companies: ["Helium"], speakers: ["Abhay Kumar"] },
   { id: "N8TCYuz8Buk", title: "Product Keynote: Wingbits (Robin Wingardh)", category: "depin", companies: ["Wingbits"], speakers: ["Robin Wingardh"] },
   { id: "GXKQYsd_IK8", title: "Product Keynote: Render Network Foundation (Sunny Osahn)", category: "depin", companies: ["Render Network Foundation"], speakers: ["Sunny Osahn"] },
   { id: "SnVvKZp9arY", title: "Superteam Demo Day: DeCharge (Prakash Kamaraj)", category: "depin", companies: ["DeCharge"], speakers: ["Prakash Kamaraj"] },
-  { id: "JJAxc01OwUo", title: "Superteam Demo Day: Tapedrive (Zelimir Fedoran)", category: "DePin", companies: ["Tapedrive"], speakers: ["Zelimir Fedoran"] },
+  { id: "JJAxc01OwUo", title: "Superteam Demo Day: Tapedrive (Zelimir Fedoran)", category: "depin", companies: ["Tapedrive"], speakers: ["Zelimir Fedoran"] },
   { id: "8FuzRFamMRw", title: "Mapping the Real World With Solana: Hivemapper (Ariel Seidman)", category: "depin", companies: ["Hivemapper"], speakers: ["Ariel Seidman"] },
 
-// Prediction Markets 
-  { id: "9sHmn6P7DQA", title: "Product Keynote: Kalshi (John Wang)", category: "prediction markets", companies: ["Kalshi"], speakers: ["John Wang"] },
-  { id: "W7u8vRHU-u0", title: "Product Keynote: Worm (Nass Diba)", category: "prediction markets", companies: ["Worm"], speakers: ["Nass Diba"] },
-  { id: "7HgDAw6WUPE", title: "Superteam Demo Day: Trepa (Jong-Chan Chung)", category: "prediction markets", companies: ["Trepa"], speakers: ["Jong-Chan Chung"] },
-  { id: "OPvk9DRi_cM", title: "Superteam Demo Day: Triad Markets (Davi Cardoso)", category: "prediction markets", companies: ["Triad Markets"], speakers: ["Davi Cardoso"] },
+  // Prediction Markets 
+  { id: "9sHmn6P7DQA", title: "Product Keynote: Kalshi (John Wang)", category: "prediction-markets", companies: ["Kalshi"], speakers: ["John Wang"] },
+  { id: "W7u8vRHU-u0", title: "Product Keynote: Worm (Nass Diba)", category: "prediction-markets", companies: ["Worm"], speakers: ["Nass Diba"] },
+  { id: "7HgDAw6WUPE", title: "Superteam Demo Day: Trepa (Jong-Chan Chung)", category: "prediction-markets", companies: ["Trepa"], speakers: ["Jong-Chan Chung"] },
+  { id: "OPvk9DRi_cM", title: "Superteam Demo Day: Triad Markets (Davi Cardoso)", category: "prediction-markets", companies: ["Triad Markets"], speakers: ["Davi Cardoso"] },
 
-// NFT & Gaming  & Consumer
-  { id: "oDje-KV8XT4", title: "NFT Ticketing Doesn't Work: KYD Labs (Ahmed Nimale)", category: "nft/gaming/consumer", companies: ["KYD Labs"], speakers: ["Ahmed Nimale"] },
-  { id: "GqwdEhFEWAE", title: "Product Keynote: Moonbirds (Spencer Gordon-Sand)", category: "nft/gaming", companies: ["Moonbirds"], speakers: ["Spencer Gordon-Sand"] },
+  // NFT & Gaming  & Consumer
+  { id: "oDje-KV8XT4", title: "NFT Ticketing Doesn't Work: KYD Labs (Ahmed Nimale)", category: "consumer", companies: ["KYD Labs"], speakers: ["Ahmed Nimale"] },
+  { id: "GqwdEhFEWAE", title: "Product Keynote: Moonbirds (Spencer Gordon-Sand)", category: "gaming", companies: ["Moonbirds"], speakers: ["Spencer Gordon-Sand"] },
   { id: "ozctdCBDrdM", title: "Superteam Demo Day: CHOMP (Kiko Zang)", category: "gaming", companies: ["CHOMP"], speakers: ["Kiko Zang"] },
   { id: "N7a45QoJAIo", title: "Superteam Demo Day: MetEngine (Harsh Prashant Ghodkar)", category: "gaming", companies: ["MetEngine"], speakers: ["Harsh Prashant Ghodkar"] },
   { id: "Vx-wkw4zZnw", title: "Superteam Demo Day: Crypto Fantasy League (Jonas Aditya Sunandar)", category: "gaming", companies: ["Crypto Fantasy League"], speakers: ["Jonas Aditya Sunandar"] },
-  { id: "Vx-wkw4zZnw", title: "Superteam Demo Day: Crypto Fantasy League (Jonas Aditya Sunandar)", category: "nft/gaming/consumer", companies: ["Crypto Fantasy League"], speakers: ["Jonas Aditya Sunandar"] },
-  { id: "HZ9WIWe4pFE", title: "Sorare x Solana: Sports, Crypto, Collecting (Nicolas Julia)", category: "nft/gaming/consumer", companies: ["Sorare"], speakers: ["Nicolas Julia"] },
+  { id: "HZ9WIWe4pFE", title: "Sorare x Solana: Sports, Crypto, Collecting (Nicolas Julia)", category: "consumer", companies: ["Sorare"], speakers: ["Nicolas Julia"] },
 
-
- // Fundraising 
+  // Fundraising 
   { id: "PtIAXNDy_UE", title: "Product Keynote: Seedplex (Treggs)", category: "fundraising", companies: ["Seedplex"], speakers: ["Treggs"] },
   { id: "E1fyJD5tyio", title: "Legion and Solana: Positioned for Onchain IPOs (Matt O'Connor)", category: "fundraising", companies: ["Legion"], speakers: ["Matt O'Connor"] },
   { id: "B_-bh-CWgiE", title: "Product Keynote: MetaDAO (Proph3t)", category: "fundraising", companies: ["MetaDAO"], speakers: ["Proph3t"] },
 
-// Wallets 
+  // Wallets 
   { id: "ADghebANEDE", title: "Building Your Financial Life Onchain: Phantom (Brandon Millman)", category: "wallets", companies: ["Phantom"], speakers: ["Brandon Millman"] },
   { id: "zJRUPue-pq0", title: "Swig: The Future of Smart Wallets on Solana (Justin Blumenthal)", category: "wallets", companies: ["Swig"], speakers: ["Justin Blumenthal"] },
-  { id: "sdcu_Glm7EY", title: "Fireside: Backpack's Armani Ferrante", category: "wallet", companies: ["Backpack"], speakers: ["Armani Ferrante"] },
+  { id: "sdcu_Glm7EY", title: "Fireside: Backpack's Armani Ferrante", category: "wallets", companies: ["Backpack"], speakers: ["Armani Ferrante"] },
   { id: "XKiqqYw03GM", title: "Product Keynote: Ledger (Ian Rogers)", category: "wallets", companies: ["Ledger"], speakers: ["Ian Rogers"] },
 
-// COMMUNITY & EVENTS
+  // COMMUNITY & EVENTS
   { id: "PSbUK-JK9LM", title: "Product Keynote: Meridian (Benedict Brady)", category: "community", companies: ["Meridian"], speakers: ["Benedict Brady"] },
   { id: "AVLy87mlHIQ", title: "Celebrating the Next Generation of Builders and Creators", category: "community", companies: [], speakers: [] },
   { id: "pcFw6RPpJNs", title: "This House believes that Solana culture is cooked", category: "community", companies: [], speakers: [] },
@@ -247,6 +236,6 @@ var videosData = [
   { id: "C_0vpvBtkGw", title: "This House: Token Buybacks Are Net-Negative Value Accrual", category: "community", companies: [], speakers: [] },
   { id: "MBImX7g1J0w", title: "Normies Shouldn't Have To Deal: The Hidden Costs of Janky UX (Caitlin Cook)", category: "community", companies: [], speakers: ["Caitlin Cook"] },
   { id: "jEYqGLKaRlg", title: "Welcome to Day 3: Solana Foundation (Rebekka Revel)", category: "community", companies: ["Solana Foundation"], speakers: ["Rebekka Revel"] },
-
 ];
+
 
