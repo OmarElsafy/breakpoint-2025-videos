@@ -2,7 +2,7 @@
 let allVideos = [];
 let currentCategory = 'all';
 
-// Initialize app
+//Initialise app
 window.addEventListener('DOMContentLoaded', () => {
     // Note: videosData should be loaded from videos-data.js
     if (typeof videosData !== 'undefined') {
@@ -161,7 +161,19 @@ function getCategoryName(category) {
         'privacy': 'Privacy',
         'compliance': 'Compliance',
         'memes': 'Memes',
-        'education': 'Education'
+        'education': 'Education',
+
+        // new / normalised categories from videos-data.js
+        
+        'cex': 'CEX',
+        'data': 'Data',
+        'credit': 'Credit',
+        'rwa': 'RWA',
+        'depin': 'DePin',
+        'prediction-markets': 'Prediction Markets',
+        'vc': 'VC',
+        'wallets': 'Wallets',
+        'fundraising': 'Fundraising'
     };
 
     return categoryNames[category] || category;
